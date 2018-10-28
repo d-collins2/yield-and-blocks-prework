@@ -1,5 +1,6 @@
 def hello_t(names)
-  names.each{|name| yield name puts name } 
+  i = 0 
+  while i < names.length 
 end
 
 # call your method here!
