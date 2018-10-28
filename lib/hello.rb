@@ -1,6 +1,8 @@
 def hello_t(names)
-  i = 0 
-  while i < names.length 
+  if block_given? 
+    names.each{|name| yield(name)} 
+  else 
+    puts 
 end
 
 # call your method here!
